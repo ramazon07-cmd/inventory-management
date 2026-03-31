@@ -1,0 +1,98 @@
+✅ PHASE 1 — SETUP
+
+
+ PostgreSQL ulash
+
+ .env sozlash (DB config)
+
+ Apps yarat:
+
+ products
+
+ inventory
+
+ users
+
+ settings.py → apps qo‘shish
+
+🧱 PHASE 2 — MODELS
+ Category model yoz
+
+ Product model yoz
+
+ Supplier model yoz (optional lekin yaxshi)
+
+ StockMovement model yoz 🔥
+
+ ForeignKeylarni to‘g‘ri bog‘la
+
+ makemigrations
+
+ migrate
+
+⚙️ PHASE 3 — CORE LOGIC (ENG MUHIM)
+ services.py yarat (inventory app ichida)
+
+ add_stock(product_id, quantity) yoz
+
+ sell_product(product_id, quantity) yoz
+
+ stock yetarliligini tekshir (sell oldidan)
+
+ get_product_stock(product_id) yoz (SUM logic)
+
+ edge case:
+
+ manfiy stockni blokla ❌
+
+ noto‘g‘ri inputni ushla
+
+🌐 PHASE 4 — VIEWS (NO DRF)
+ Product create view (POST)
+
+ Product list view (GET)
+
+ Add stock endpoint (POST)
+
+ Sell endpoint (POST)
+
+ Stock check endpoint (GET)
+
+ JsonResponse ishlat
+
+ URL routing yoz
+
+🔐 PHASE 5 — AUTH
+ Django User model ishlat
+
+ Login view yoz
+
+ Logout view yoz
+
+ Role qo‘sh:
+
+ admin
+
+ worker
+
+ Permission check qo‘sh (masalan: faqat admin stock qo‘sha oladi)
+
+📊 PHASE 6 — UPGRADE (SENI AJRATADI)
+ Low stock alert (threshold)
+
+ Sales history endpoint
+
+ Top products (eng ko‘p sotilgan)
+
+ Daily sales count
+
+ Simple dashboard (json format ham bo‘ladi)
+
+🧨 FINAL CHECK (REAL ENGINEER TEST)
+ Stock hech qachon DBda saqlanmayapti ✅
+
+ Har action → StockMovementga yozilyapti ✅
+
+ Negative stock yo‘q ✅
+
+ APIlar ishlayapti (Postman bilan test) ✅
