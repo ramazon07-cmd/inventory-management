@@ -3,32 +3,6 @@
 
  PostgreSQL ulash
 
- .env sozlash (DB config)
-
- Apps yarat:
-
- products
-
- inventory
-
- users
-
- settings.py → apps qo‘shish
-
-🧱 PHASE 2 — MODELS
- Category model yoz
-
- Product model yoz
-
- Supplier model yoz (optional lekin yaxshi)
-
- StockMovement model yoz 🔥
-
- ForeignKeylarni to‘g‘ri bog‘la
-
- makemigrations
-
- migrate
 
 ⚙️ PHASE 3 — CORE LOGIC (ENG MUHIM)
  services.py yarat (inventory app ichida)
