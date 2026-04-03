@@ -37,17 +37,7 @@
  URL routing yoz
 
 🔐 PHASE 5 — AUTH
- Django User model ishlat
 
- Login view yoz
-
- Logout view yoz
-
- Role qo‘sh:
-
- admin
-
- worker
 
  Permission check qo‘sh (masalan: faqat admin stock qo‘sha oladi)
 
