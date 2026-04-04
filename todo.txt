@@ -1,9 +1,3 @@
-✅ PHASE 1 — SETUP
-
-
- PostgreSQL ulash
-
-
 ⚙️ PHASE 3 — CORE LOGIC (ENG MUHIM)
  services.py yarat (inventory app ichida)
 
